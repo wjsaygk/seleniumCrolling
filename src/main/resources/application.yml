@@ -1,0 +1,17 @@
+# 스페이스 규칙 (잘지켜야함)
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
+  datasource:
+    url: jdbc:mysql://localhost:3306/dydgk?serverTimezone=Asia/Seoul
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: dydgk
+    password: dydgk

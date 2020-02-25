@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sari.croll.repository.SaraminRepository">
+
+<insert id ="save">
+INSERT INTO Saramin(url, title, CompanyName, createDate, type)
+VALUES(#{url},#{title},#{CompanyName},now(),1)
+</insert>
+
+<select id ="findAll" resultType="com.sari.croll.model.Saramin">
+select DISTINCT * from Saramin
+</select>
+
+<delete id = "delete">
+DELETE FROM Saramin
+</delete>
+</mapper>
